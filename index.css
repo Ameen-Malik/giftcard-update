@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper
+{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.container
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+.heading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(a8340382b9.png);
+    color: white;
+    font-family: cursive;
+}
+.button
+{
+    display: flex;
+    gap: 20px;
+}
+button
+{
+    border: none;
+    background:none;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: darkslateblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.uppara
+{
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    left: 190px;
+    color: red;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: large;
+}
+.btmpara
+{
+    position: absolute;
+    text-align: center;
+    top: 580px;
+    left: 190px;
+    color:lightgreen;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: large;
+}
+.right
+{
+    display: flex;
+    height: 78vh;
+    width: 50vw;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+   align-items: center;
+    font-size: larger;
+    font-family: cursive;
+    background-color: darkslateblue;
+    color: azure;
+}
+h4
+{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+.footer
+{
+    position: absolute;
+    top: 695px;
+    background-image: url(a8340382b9.png);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    color: white;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: cursive;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .heading {
+        text-align: center; 
+    }
+
+    .button {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .main {
+        flex-direction: column-reverse; 
+    }
+
+    .left,
+    .right {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .uppara,
+    .btmpara {
+        margin: 10px; 
+    }
+}
